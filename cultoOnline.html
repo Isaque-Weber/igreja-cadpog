@@ -11,12 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- ESTILO ESSENCIAL -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="./assets/styles/home.css">
+    <link rel="stylesheet" href="./assets/styles/cultoOnline.css">
     <link rel="shortcut icon" href="./assets/img/cadpog.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -36,29 +35,29 @@
         <div class="container">
             <ul>
                 <li>
-                    <a href="/index.html">Inicio</a>
+                    <a href="./index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="/quemSomos.html">Quem Somos</a>
+                    <a href="./quemSomos.html">Quem Somos</a>
                 </li>
                 <li>
-                    <a href="/nossasIgrejas.html">Nossas Igrejas</a>
+                    <a href="./nossasIgrejas.html">Nossas Igrejas</a>
                 </li>
                 <li>
-                    <a href="/cultoOnline.html">Culto Online</a>
+                    <a href="./cultoOnline.html">Culto Online</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <section class="iframe">
-        <div>
-            <iframe class="iframe" id="live-iframe" src="https://www.youtube.com/embed/live_stream?channel=UC71Lq3vk7MZgvbL_iheZfAQ" frameborder="0" allowfullscreen></iframe>
+    <main>
+        <div class="container">
+            <iframe class="iframe" id="live-iframe" src="https://www.youtube.com/embed/live_stream?channel=UC71Lq3vk7MZgvbL_iheZfAQ" title="Culto ao vivo" allowfullscreen></iframe>
             <div id="no-live-message">
                 <p>No momento, não há nenhuma transmissão ao vivo.</p>
                 <p>Por favor, volte mais tarde.</p>
             </div>
         </div>
-    </section>
+    </main>
     
     
     <!-- Inserção de um footer com contraste -->
@@ -88,6 +87,7 @@
     </footer>
     
     <script src="./assets/scripts/home.js"></script>
+    <script src="./assets/scripts/checkLiveStatus.js"></script>
 </body>
 
 </html>

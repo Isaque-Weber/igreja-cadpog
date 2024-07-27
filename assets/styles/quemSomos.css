@@ -125,21 +125,6 @@ body {
     overflow-x: hidden;
 }
 
-/* div.table {
-    border-radius: 20px;
-    background-color: var(--c5);
-} */
-
-@media screen and (max-width: 1280px) {
-    /* section.banner .content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        place-items: initial;
-    }
-    section.banner .text {
-        font-size: 4rem; */
-}
-
 @media screen and (max-width: 960px) {
      :root {
         font-size: 55%;
@@ -199,7 +184,6 @@ h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-size: 1.8em;
-    /* color: var(--c1); */
 }
 
 h2 {
@@ -208,19 +192,16 @@ h2 {
     color: var(--c4);
 }
 
+main {
+    padding: 25px 0;
+    min-height: calc(100dvh - 80px - 50px - 155px);
+}
+
 .about-us {
-    margin-left: 170px;
-    margin-right: 170px;
-    margin-top: 25px;
-    margin-bottom: 25px;
     border-radius: 20px;
     background-color: var(--c5);
     position: relative;
-    clear: none;
-    height: auto;
-    /* padding-top: 25px;
-    padding-bottom: 25px; */
-    padding: 25px;
+    padding: 5px 25px;
 }
 
 h1 {

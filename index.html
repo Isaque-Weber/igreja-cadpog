@@ -1,161 +1,108 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CADPOG</title>
-        <link rel="shortcut icon" href="./assets/img/cadpog.png" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        <!-- ESTILO ESSENCIAL -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-        <link rel="stylesheet" href="./assets/styles/home.css">
-        <!-- ESTILO OPCIONAL -->
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css"> -->
-        <!-- <style>
-            /* Adicione aqui os estilos para o footer */
-            footer {
-                background-color: #333;
-                color: #fff;
-                padding: 20px 0;
-                text-align: center;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADPOG</title>
+    <link rel="shortcut icon" href="./assets/img/cadpog.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Ubuntu:wght@400;500;700&display=swap"
+          rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- ESTILO ESSENCIAL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="./assets/styles/home.css">
+</head>
 
-            footer .container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            footer .container div {
-                margin: 10px 0;
-            }
-
-            footer .social-icons {
-                display: flex;
-                justify-content: center;
-                gap: 10px;
-            }
-
-            footer .social-icons a {
-                color: #fff;
-                text-decoration: none;
-                font-size: 1.5em;
-            }
-
-            footer p {
-                margin: 0;
-            }
-
-            @media (max-width: 768px) {
-                footer .container {
-                    flex-direction: column;
-                    text-align: center;
-                }
-            }
-        </style> -->
-    </head>
-
-    <body>
-        <header>
-            <div class="header container">
-                <div id="logo">
-                    <img src="./assets/img/cadpog.png" alt="CADPOG">
-                </div>
-                <menu class="mobile">
-                    <div>
-                        <div class="hamb"></div>
-                    </div>
-                </menu>
+<body>
+<header>
+    <div class="header container">
+        <div id="logo">
+            <img src="./assets/img/cadpog.png" alt="CADPOG">
+        </div>
+        <menu class="mobile">
+            <div>
+                <div class="hamb"></div>
             </div>
-        </header>
-        <nav class="nav">
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="/index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="/quemSomos.html">Quem Somos</a>
-                    </li>
-                    <li>
-                        <a href="/nossasIgrejas.html">Nossas Igrejas</a>
-                    </li>
-                    <li>
-                        <a href="/cultoOnline.html">Culto Online</a>
-                    </li>
+        </menu>
+    </div>
+</header>
+<nav class="nav">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="./index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="./quemSomos.html">Quem Somos</a>
+            </li>
+            <li>
+                <a href="./nossasIgrejas.html">Nossas Igrejas</a>
+            </li>
+            <li>
+                <a href="./cultoOnline.html">Culto Online</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <section class="banner">
+        <div class="versicle-random">
+            <div class="versicle"></div>
+            <div class="reference"></div>
+        </div>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"
+                        style="background-image: url('/assets/img/img1.jpg');"></li>
+                    <li class="glide__slide"
+                        style="background-image: url('/assets/img/img2.jpg');"></li>
+                    <li class="glide__slide"
+                        style="background-image: url('/assets/img/img3.jpg');"></li>
+                    <li class="glide__slide"
+                        style="background-image: url('/assets/img/img4.jpg');"></li>
                 </ul>
             </div>
-        </nav>
-        <section class="banner">
-            <!-- <img src="./assets/img/jujuEisaque.jpg" alt="cadpog"> -->
-            <div class="glide">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <li class="glide__slide" style="background-image: url('/assets/img/jujuEisaque.jpg');"></li>
-                        <li class="glide__slide" style="background-image: url('/assets/img/banner.jpg');"></li>
-                        <li class="glide__slide" style="background-image: url('/assets/img/jujuEisaque.jpg');">2</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <div class="content container">
-            <!-- <div class="text">
-                Catedral das Assembléias de Deus Ministério Deus de Poder e Glória
-            </div> -->
-            <div class="btns">
-                <button class="btn">Assista nossos cultos</button>
-                <button class="btn">Visite nossas redes sociais</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-logo">
+            <img src="./assets/img/cadpog.png" alt="CADPOG" width="100">
+        </div>
+        <div class="footer-social">
+            <h2>Siga-nos:</h2>
+            <div class="social-links">
+                <a href="https://www.facebook.com/Cadpogoficial" target="_blank">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://www.youtube.com/@cadpogbrasil1737" target="_blank">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+
+                <a href="https://www.instagram.com/igrejacadpog" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
             </div>
         </div>
+        <div class="footer-info">
+            <p>&copy; 2024 CADPOG. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
 
-    <!-- Inserção de um footer com contraste -->
-        <footer>
-            <div class="container">
-                <div class="footer-logo">
-                    <img src="./assets/img/cadpog.png" alt="CADPOG" width="100">
-                </div>
-                <div class="footer-social">
-                    <h2>Siga-nos:</h2>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/Cadpogoficial" target="_blank">
-                            <i class="fab fa-facebook-f"></i> Facebook
-                        </a>
-                        <a href="https://www.youtube.com/@cadpogbrasil1737" target="_blank">
-                            <i class="fab fa-youtube"></i> YouTube
-                        </a>
 
-                        <a href="https://www.instagram.com/igrejacadpog" target="_blank">
-                            <i class="fab fa-instagram"></i> Instagram
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-info">
-                    <p>&copy; 2024 CADPOG. Todos os direitos reservados.</p>
-                </div>
-            </div>
-        </footer>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="./assets/scripts/glide.js"></script>
+<script src="./assets/scripts/geradorDeVersiculoAleatorio.js"></script>
+<script src="./assets/scripts/home.js"></script>
+</body>
 
-        
-        
-        <script src="./assets/scripts/home.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-        <script>
-            new Glide('.glide', {
-                type: 'carousel',
-                autoplay: 3000,
-                hoverpause: false,
-                perView: 1,
-                keyboard: false,
-                dragThreshould: false,
-            }).mount()
-        </script>
-    </body>
-
-    </html>
+</html>
