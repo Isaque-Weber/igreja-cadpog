@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --c1: #546E88;
+    --c2: #1c2973;
+    --c3: #fefefe;
+    --c4: #bb1a01;
+    --c5: #1c297333;
+    font-size: 62.5%;
+    font-family: Ubuntu, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.btn {
+    display: block;
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border: 3px solid #fff;
+    outline: none;
+    cursor: pointer;
+    backdrop-filter: blur(.5rem);
+}
+
+.container {
+    max-width: 1280px;
+    padding-right: 8rem;
+    padding-left: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+header #logo {
+    width: 80px;
+}
+
+header #logo img {
+    width: 100%;
+}
+
+menu.mobile {
+    display: none;
+    position: relative;
+    padding: 2rem 1rem;
+    cursor: pointer;
+}
+
+menu.mobile .hamb {
+    width: 30px;
+    height: 3px;
+    background-color: var(--c1);
+}
+
+menu.mobile .hamb::before,
+menu.mobile .hamb::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: var(--c1);
+    display: block;
+    transition: transform .1s ease-in-out;
+}
+
+menu.mobile .hamb::before {
+    transform: translateY(10px);
+}
+
+menu.mobile .hamb::after {
+    transform: translateY(-10px);
+}
+
+menu.mobile.active .hamb {
+    background-color: transparent;
+}
+
+menu.mobile.active .hamb::before {
+    transform: rotate(45deg) translateY(0);
+}
+
+menu.mobile.active .hamb::after {
+    transform: rotate(-45deg) translateY(0);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 50px;
+}
+
+nav ul li a {
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--c3);
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: var(--c2);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    color: var(--c4);
+    text-decoration-style: double;
+}
+
+div.table {
+    display: flex;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1.32rem;
+    padding: 2.5rem;
+    border-radius: 20px;
+    background-color: var(--c5);
+    color: var(--c2);
+    /* width: 80%; */
+    height: min-content;
+}
+
+@media screen and (max-width: 960px) {
+     :root {
+        font-size: 55%;
+    }
+    .container {
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+    header {
+        position: sticky;
+        top: 0;
+        background-color: var(--c3);
+    }
+    menu.mobile {
+        display: initial;
+    }
+    nav {
+        transform: translateX(100%);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        z-index: 10;
+        transition: .1s ease-in-out;
+    }
+    nav.active {
+        transform: translateX(0);
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5rem;
+        height: calc(100vh - 80px);
+    }
+    nav ul li a {
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    section.banner .text {
+        font-size: 3.5rem;
+    }
+}
+
+/* Início da inserção dos atributos de CSS do footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container div {
+    margin: 10px 0;
+}
+
+footer .social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .social-icons h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+footer .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer h2 {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
